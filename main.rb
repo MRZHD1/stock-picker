@@ -5,7 +5,7 @@ def stock_picker (array)
     until i == array.length
         j = i
         until j == array.length
-            max_price = [].concat([i,j]) if array[j] - array[i] > array[max_price[1]] - array[max_price[0]]
+            max_price = [i,j] if array[j] - array[i] > array[max_price[1]] - array[max_price[0]]
             j += 1
         end
         i += 1
